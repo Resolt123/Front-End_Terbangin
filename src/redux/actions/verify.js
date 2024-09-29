@@ -70,20 +70,20 @@ export const generateOTPProfile =
                 data,
             };
         } else if (phoneNumber && !email) {
-            data = JSON.stringify({
-                phoneNumber,
-            });
+            // data = JSON.stringify({
+            //     phoneNumber,
+            // });
 
-            config = {
-                method: "post",
-                url: `${
-                    import.meta.env.VITE_BACKEND_API
-                }/api/v1/verification/generate-otp-sms`,
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                data,
-            };
+            // config = {
+            //     method: "post",
+            //     url: `${
+            //         import.meta.env.VITE_BACKEND_API
+            //     }/api/v1/verification/generate-otp-sms`,
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //     },
+            //     data,
+            // };
         }
 
         try {

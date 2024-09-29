@@ -171,25 +171,26 @@ const AccountSettingsForm = () => {
           <h5 className="text-center">Ganti Nomor Telepon</h5>
           <div className="d-flex justify-content-between mb-3">
             <Form.Label>Nomor Telepon</Form.Label>
-            <ButtonMUI
+            {/* <ButtonMUI
               variant="link"
               onClick={() => setIsEditingPhoneNumber(!isEditingPhoneNumber)}
+              disabled
               style={{ color: "#7126B5" }}
             >
               {isEditingPhoneNumber ? "Batal" : "Ubah"}
-            </ButtonMUI>
+            </ButtonMUI> */}
           </div>
           <Form.Control
             type="text"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
-            disabled={!isEditingPhoneNumber}
+            disabled
           />
         </Form.Group>
         <Button
           onClick={handleChangePhoneNumber}
           className="mt-2 w-100"
-          disabled={loading || !isEditingPhoneNumber}
+          disabled
         >
           {loading ? "Loading..." : "Verifikasi Nomor Telepon"}
         </Button>

@@ -24,7 +24,7 @@ function Login() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email/No telepon</Form.Label>
+        <Form.Label>Email</Form.Label>
         <Form.Control
           type="email"
           placeholder="Contoh: john@gmail.com"
